@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+  <div class="test-block-wrapper">
+    <div class="test-block">
+      image from assets
+      <img src="<%=require('../img/img-placeholder.png')%>" alt="">
+    </div>
+  
+    <div class="test-block">
+      image from public
+      <img src="/img/img-placeholder-public.png" alt="">
+    </div>
+    
+    <div class="test-block">
+      background image
+      <div class="test-image"></div>
+    </div>
+  </div>
+
+  <div class="test-block-wrapper">
+    <div class="test-block">
+      svg one
+      <svg class="test-svg">
+        <use xlink:href="#alert-circle"></use>
+      </svg>
+    </div>
+
+    <div class="test-block">
+      svg two
+
+      <svg class="test-svg">
+        <use xlink:href="#account-question"></use>
+      </svg>
+    </div>
+  </div>
+
+  <div id="vue-example"></div>
+</body>
+</html>
