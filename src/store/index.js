@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 
+import { memory } from './memory'
+
 Vue.use(Vuex)
 
 const state = {}
@@ -15,5 +17,8 @@ export const store = new Vuex.Store({
   state,
   getters,
   mutations,
-  actions
+  actions,
+  modules: {
+    memory
+  }
 })
